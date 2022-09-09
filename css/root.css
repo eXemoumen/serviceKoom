@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Noto Serif Tamil;
+  font-weight: 400;
     --orange_color: #ed7631;
     --white_color:#ffffff;
     --backgrond_color : #D9E8F5;
     --msg_color: #91BED4;
     --bleu_color:#0477BF;    
+    --font_size1:20px;
     max-width: 430px;
     max-height: 926px;
 }
