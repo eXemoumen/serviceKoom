@@ -6,20 +6,65 @@
 .landing-page img{
     width: 372px;
     height: 283px;
-    margin:150px 0 150px 0;
-    
+    margin:0px 0 0px 0;
+    animation: drop 0.8s ease forwards;
+    -webkit-animation: drop 0.8s ease  forwards;
+    opacity: 0;
+}
+@keyframes drop {
+    0%{opacity: 0;margin: 150px 1000px 150px 0;}
+    100%{margin: 150px 0 150px 0;opacity: 1;}
 }
 .landing-page p{
     font-size: var(--font_size1);
     text-align: center;
-    margin: 35px 0 50px 0;
+    margin: 30px 0 50px 0;
+   
+}
+.landing-txt{
+    animation: dropText 1s ease forwards;
+    -webkit-animation: dropText 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+@keyframes dropText {
+    0%{ opacity: 0; transform:translateX(400px) ; -webkit-transform:translateX(400px) ; -moz-transform:translateX(400px) ; -ms-transform:translateX(400px) ; -o-transform:translateX(400px) ; }
+    
+    100%{ opacity: 1; transform:translateX(0) ; -webkit-transform:translateX(0) ; -moz-transform:translateX(0) ; -ms-transform:translateX(0) ; -o-transform:translateX(0) ; }
+  
 }
 .slogon-txt{
     text-transform: capitalize;
     letter-spacing:4px ;
+    animation: slogon-txt 0.8s ease-in 0.8  forwards ;
+    -webkit-animation: slogon-txt 0.8s ease-out 0.4s  forwards ;
+    opacity: 0;
 }
+@keyframes slogon-txt{
+    0%{
+        letter-spacing: 1px;
+        transform: translateY(400px);
+        -webkit-transform: translateY(400px);
+        -moz-transform: translateY(400px);
+        -ms-transform: translateY(400px);
+        -o-transform: translateY(400px);
+}
+    50%{
+        letter-spacing: 2px;
+    }
+    100%{
+        letter-spacing: 4px;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        opacity: 1;
+}
+}
+
 .slogon-txt:hover{
     border-bottom: 1px solid black;
+    
 }
 .landing-page button{
     width: 63px;
@@ -32,12 +77,17 @@
     -moz-border-radius: 40.2907px;
     -ms-border-radius: 40.2907px;
     -o-border-radius: 40.2907px;
-    margin:0 5px 19px 340px;
-    transition: 0.5ms;
-    -webkit-transition: 0.5ms;
-    -moz-transition: 0.5ms;
-    -ms-transition: 0.5ms;
-    -o-transition: 0.5ms;
+    margin:0 5px 25px 340px;
+    animation: btnup 1.5s ease 0.3s forwards;
+    -webkit-animation: btnup 1.5s ease 0.3s forwards;
+    opacity: 0;
+}
+@keyframes btnup{
+    0%{margin: 150px;}
+    100%{
+        opacity: 1;
+        margin:0 5px 50px 340px;
+    }
 }
 .material-symbols-outlined{
     width: 34.5px;
