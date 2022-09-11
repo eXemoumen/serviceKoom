@@ -15,7 +15,7 @@
 .landing-page p{
     font-size: var(--font_size1);
     text-align: center;
-    margin: 30px 0 50px 0;
+    margin: 30px 5px 50px 0;
    
 }
 .landing-txt{
@@ -30,6 +30,7 @@
     animation: slogon-txt 0.8s ease-in 0.8  forwards ;
     -webkit-animation: slogon-txt 0.8s ease-out 0.4s  forwards ;
     opacity: 0;
+    padding-bottom: 26px;
 }
 
 
@@ -40,8 +41,8 @@
 .arowbtn{
     width: 63px;
     height: 43px;
-    background-color: var(--backgrond_color);
-    background: rgba(247, 90, 0, 0.16);
+    /* background-color: var(--backgrond_color);
+    background: rgba(247, 90, 0, 0.16); */
     border: none;
     border-radius: 40.2907px;
     -webkit-border-radius: 40.2907px;
@@ -49,9 +50,10 @@
     -ms-border-radius: 40.2907px;
     -o-border-radius: 40.2907px;
     margin:0 5px 25px 340px;
-    animation: btnup 1.5s ease 0.3s forwards;
-    -webkit-animation: btnup 1.5s ease 0.3s forwards;
+    animation: btnup 1.5s ease 0.8s forwards;
+    -webkit-animation: btnup 1.5s ease 0.8s forwards;
     opacity: 0;
+    max-height: 103px;
 }
 
 .material-symbols-outlined{
@@ -77,7 +79,7 @@
     margin: -9px;
     background-color: var(--backgrond_color);
     animation: dropText 1s ease forwards;
-    -webkit-animation: dropText 0.6s ease 0.1s forwards;
+    -webkit-animation: dropText 0.8s ease 0.3s forwards;
     opacity: 0;
     
 }
@@ -99,13 +101,14 @@
     justify-content: space-between;
 }
 .btns:last-child :not(span){
-    margin: 0 20px 18px 20px;
+    margin: 0 10px 18px 14px;
 }
 .skipbtn{
     width: 63px;
     height: 43px;
-    background-color: var(--backgrond_color);
-    background: rgba(247, 90, 0, 0.16);
+    /* background-color: var(--backgrond_color);
+    background: rgba(247, 90, 0, 0.16); */
+    font-size: var(--font_size1);
     border: none;
     color: var(--bleu_color);
     border-radius: 40.2907px;
@@ -143,13 +146,24 @@
     -webkit-animation: btnup 1.5s ease 0.8s forwards !important;
 }
 .splash-creen.second{
- animation: dropText2 ;
- -webkit-animation: dropText2 0.6s ease 0.3ms forwards ;
+ animation: dropText2 0.8s ease 0.3s forwards ;
+ -webkit-animation: dropText2 0.8s ease 0.3s forwards ;
 }
 .splash-creen.second p{
     padding: 5% 0 4% 0 ;
-    animation: dropText3;
+    animation: dropText3 0.8s ease 0.5s forwards;
     -webkit-animation: dropText3 0.8s ease 0.5s forwards;
+}
+.splash-creen.thered{
+ animation: btnup 0.8s ease 0.3s forwards ;
+ -webkit-animation: btnup 0.8s ease 0.3s forwards ;
+}
+.splash-creen.thered p{
+    padding: 5% 0 13% 0 ;
+    animation: dropText2 0.8s ease 0.6s forwards;
+    -webkit-animation: dropText2 0.8s ease 0.6s forwards;
+    opacity: 0;
+    z-index: -1;
 }
 @keyframes drop {
     0%{
