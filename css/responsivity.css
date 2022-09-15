@@ -68,8 +68,20 @@
         padding: 3%;
         font-size: calc(var(--font_size1)- 1px) ;
     }
+    
 }
 @media (max-height:524px) {
+    .darktheme{
+        position: absolute;
+        width: fit-content;
+        top: 24.5%;
+        left: 88%;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+        z-index: -1;
+        
+    }
     @keyframes bodymov {
         0%{
             transform: translateY(0);
@@ -88,6 +100,16 @@
 } 
 }
 @media (min-height:700px) {
+    .darktheme{
+        position: absolute;
+        top: 21.5%;
+        right: -52%;
+        left: 33%;
+        background-color: #ffffff;
+        border: none;
+        outline: none;
+        z-index: -1;
+    }
     @keyframes bodymov {
         0%{
             transform: translateY(0);
