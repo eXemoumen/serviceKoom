@@ -67,8 +67,25 @@
         margin: 3%;
         padding: 3%;
         font-size: calc(var(--font_size1)- 1px) ;
-      
     }
+}
+@media (max-height:524px) {
+    @keyframes bodymov {
+        0%{
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+    }
+        100%{
+            transform: translateY(-24.5%);
+            -webkit-transform: translateY(-24.5%);
+            -moz-transform: translateY(-24.5%);
+            -ms-transform: translateY(-24.5%);
+            -o-transform: translateY(-24.5%);
+}
+} 
 }
 @media (min-height:700px) {
     @keyframes bodymov {
