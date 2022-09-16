@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: center;
     margin-top: -25%;
+    background-color:var(--backgrond_color);
+    animation: bodymov 0.5s ease-out 1.5s forwards;
+    -webkit-animation: bodymov 0.5s ease-out 1.5s forwards;
 }
 .landing-page img{
     width: 86.6%;
@@ -17,7 +20,9 @@
     font-size: var(--font_size1);
     text-align: center;
     margin: 3.25% 1.17% 5.4% 0;
-   
+    margin: 30px 5px 50px 0;
+    color: var(--font_color);
+
 }
 .landing-txt{
     animation: dropText 1s ease forwards;
@@ -39,9 +44,35 @@
     border-bottom: 1px solid black;
     
 }
+.darktheme{
+    position: absolute;
+    top: 10%;
+    left: 88%;
+    background-color:transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    
+}
+
+.fa-solid{
+    font-size: 32px;
+    width: fit-content;
+}
+.fa-solid.fa-sun{
+    position: absolute;
+    color: #ffffff;
+    left:-670%;
+
+    
+}
 .arowbtn{
     width: 14.7%;
     height: 4.65%;
+
+    width: 63px;
+    height: 43px;
+    background-color: var(--backgrond_color);
     border: none;
     border-radius: 40.2907px;
     -webkit-border-radius: 40.2907px;
@@ -78,7 +109,8 @@
     margin: -2.3%;
     background-color: var(--backgrond_color);
     animation: dropText 1s ease forwards;
-    -webkit-animation: dropText 0.8s ease 0.3s forwards;
+    -webkit-animation: dropText 0.8s ease 0.3s forwards,bodymov 1s ease-out 1.7s forwards ;
+
     opacity: 0;
     
 }
@@ -103,10 +135,9 @@
     margin: 0 10px 18px 14px;
 }
 .skipbtn{
-    width: 14%;
-    height: auto;
-    /* background-color: var(--backgrond_color);
-    background: rgba(247, 90, 0, 0.16); */
+    width: 63px;
+    height: 43px;
+    background-color: var(--backgrond_color);
     font-size: var(--font_size1);
     border: none;
     color: var(--bleu_color);
@@ -132,6 +163,7 @@
 }
 .splash-creen p {
     font-size: var(--font_size1);
+    color: var( --font_color);
     text-align: center;
     line-height: 39px;
     margin: 6% 0 0 0;
@@ -145,8 +177,8 @@
     -webkit-animation: btnup 1.5s ease 0.8s forwards !important;
 }
 .splash-creen.second{
- animation: dropText2 0.8s ease 0.3s forwards ;
- -webkit-animation: dropText2 0.8s ease 0.3s forwards ;
+ animation: dropText2 0.8s ease 0.3s forwards,bodymov 1s ease-out 1.5s forwards  ;
+ -webkit-animation: dropText2 0.8s ease 0.3s forwards,bodymov 1s ease-out 1.5s forwards  ;
 }
 .splash-creen.second p{
     padding: 0% 0 0% 0 ;
@@ -155,8 +187,8 @@
     -webkit-animation: dropText3 0.8s ease 0.5s forwards;
 }
 .splash-creen.thered{
- animation: btnup 0.8s ease 0.3s forwards ;
- -webkit-animation: btnup 0.8s ease 0.3s forwards ;
+ animation: btnup 0.8s ease 0.3s forwards,bodymov 1s ease-out 1.5s forwards  ;
+ -webkit-animation: btnup 0.8s ease 0.3s forwards,bodymov 1s ease-out 1.5s forwards  ;
 }
 .splash-creen.thered p{
     padding: 0 0 0 0 ;
@@ -207,54 +239,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes drop {
     0%{
         opacity: 0;
@@ -284,6 +268,22 @@
              -o-transform:translateX(0) ;
         }
   
+}
+@keyframes bodymov {
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+    100%{
+        transform: translateY(-10%);
+        -webkit-transform: translateY(-10%);
+        -moz-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
+        -o-transform: translateY(-10%);
+}
 }
 @keyframes slogon-txt{
     0%{
@@ -351,6 +351,14 @@
          -webkit-transform:translateX(0) ;
           -moz-transform:translateX(0) ;
            -ms-transform:translateX(0) ;
-            -o-transform:translateX(0) ;
+         -o-transform:translateX(0) ;
        }
+}
+@keyframes backgrond{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
