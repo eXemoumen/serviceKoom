@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -25%;
 }
 .landing-page img{
-    width: 372px;
-    height: 283px;
-    margin:0px 0 0px 0;
+    width: 86.6%;
+    height:31%;
+    margin:auto;
     animation: drop 0.8s ease forwards;
     -webkit-animation: drop 0.8s ease  forwards;
     opacity: 0;
@@ -15,7 +16,7 @@
 .landing-page p{
     font-size: var(--font_size1);
     text-align: center;
-    margin: 30px 5px 50px 0;
+    margin: 3.25% 1.17% 5.4% 0;
    
 }
 .landing-txt{
@@ -30,7 +31,7 @@
     animation: slogon-txt 0.8s ease-in 0.8  forwards ;
     -webkit-animation: slogon-txt 0.8s ease-out 0.4s  forwards ;
     opacity: 0;
-    padding-bottom: 26px;
+    padding-bottom: 2.8%;
 }
 
 
@@ -39,21 +40,19 @@
     
 }
 .arowbtn{
-    width: 63px;
-    height: 43px;
-    /* background-color: var(--backgrond_color);
-    background: rgba(247, 90, 0, 0.16); */
+    width: 14.7%;
+    height: 4.65%;
     border: none;
     border-radius: 40.2907px;
     -webkit-border-radius: 40.2907px;
     -moz-border-radius: 40.2907px;
     -ms-border-radius: 40.2907px;
     -o-border-radius: 40.2907px;
-    margin:0 5px 25px 340px;
+    margin:1.2% 1.2% 2.7% 80%;  
     animation: btnup 1.5s ease 0.8s forwards;
     -webkit-animation: btnup 1.5s ease 0.8s forwards;
     opacity: 0;
-    max-height: 103px;
+    max-height: 11.1%;
 }
 
 .material-symbols-outlined{
@@ -76,7 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: -9px;
+    margin: -2.3%;
     background-color: var(--backgrond_color);
     animation: dropText 1s ease forwards;
     -webkit-animation: dropText 0.8s ease 0.3s forwards;
@@ -88,8 +87,8 @@
     flex-direction: column;
     justify-content: center;
     background-color: var(--bleu_color);
-    width: 100%;
-    height: 640px;
+    max-width: 100%;
+    height: 69%;
     border-bottom-left-radius:45px ;
     border-bottom-right-radius: 45px;
     
@@ -104,8 +103,8 @@
     margin: 0 10px 18px 14px;
 }
 .skipbtn{
-    width: 63px;
-    height: 43px;
+    width: 14%;
+    height: auto;
     /* background-color: var(--backgrond_color);
     background: rgba(247, 90, 0, 0.16); */
     font-size: var(--font_size1);
@@ -135,8 +134,8 @@
     font-size: var(--font_size1);
     text-align: center;
     line-height: 39px;
-    margin: 30px 0 50px 0;
-    padding: 5% 0 13% 0 ;
+    margin: 6% 0 0 0;
+    padding: 0 0 0 0 ;
     animation: dropText 1s ease forwards;
     -webkit-animation: dropText 0.8s ease 0.5s forwards;
     opacity: 0;
@@ -150,7 +149,8 @@
  -webkit-animation: dropText2 0.8s ease 0.3s forwards ;
 }
 .splash-creen.second p{
-    padding: 5% 0 4% 0 ;
+    padding: 0% 0 0% 0 ;
+    margin: 1% 0 0 0;
     animation: dropText3 0.8s ease 0.5s forwards;
     -webkit-animation: dropText3 0.8s ease 0.5s forwards;
 }
@@ -159,12 +159,102 @@
  -webkit-animation: btnup 0.8s ease 0.3s forwards ;
 }
 .splash-creen.thered p{
-    padding: 5% 0 13% 0 ;
+    padding: 0 0 0 0 ;
     animation: dropText2 0.8s ease 0.6s forwards;
     -webkit-animation: dropText2 0.8s ease 0.6s forwards;
     opacity: 0;
     z-index: -1;
 }
+
+.topsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-height: 463px;
+}
+.botemsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 463px;
+    background-color: red;
+}
+.splash-creen.fourth.vector-img{
+    position:relative;
+} 
+.splash-creen.fourth img{
+    width: 72%;
+    height: 61%;
+    margin: auto;
+}
+/* .splash-creen.fourth h1,p{
+    position: absolute;
+
+}
+.splash-creen.fourth h1{
+    color: var(--backgrond_color);
+    margin: auto;
+    top: 1%;
+}
+.splash-creen.fourth p{
+    margin: auto;
+    top: 5%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes drop {
     0%{
         opacity: 0;
